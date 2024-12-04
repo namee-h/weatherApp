@@ -1,38 +1,100 @@
+
+
+body{
+  background-color: rgba(210, 105, 30, 0.42);
+  height: 100vh;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 .App {
+  display: flex ;
+  justify-content: center;
   text-align: center;
+  align-items: center;
+  border: 1px solid black;
+  height: 100vh;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  background-color: white;
+  border: 5px double white;
+  border-radius: 24px;
+  width: 400px;
+  height: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px 2px, rgba(0, 0, 0, 0.3) 0px 1px 3px 2px;
+}
+.nav{
+  width: 93%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0em 0.5em;
+}
+.nav>span{
+  color:rgba(210, 105, 30, 0.575)
+}
+.gradient-text {
+  font-family: fantasy;
+  background: linear-gradient(to right, rgb(255, 167, 163), rgb(198, 255, 128), rgb(161, 219, 255));
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+  font-size: 48px;
+}
+
+.main{
+  border: 3px solid rgba(210, 105, 30, 0.42);
+  border-radius: 24px;
+  background-color: rgba(210, 105, 30, 0.42);
+  width: 80%;
+  height: 150px;
+  text-align: center;
+  margin-top: 1em;
+  padding: 0.5em;
+}
+.weather-box{
+  padding: 0.8em 1em;
+  text-align: left;
   color: white;
+  text-transform: uppercase;
+  position: relative;
 }
-
-.App-link {
-  color: #61dafb;
+.icon{
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button-box{
+  border: 1px solid rgba(210, 105, 30, 0.42);
+  border-radius: 24px;
+  width: 85%;
+  height: 50px;
+  margin-top: 1.5em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(210, 105, 30, 0.42);
+}
+.buttons > button{
+  margin-left: 0.3em;
+  outline: none;
+  background-color: white ;
+  border: 0;
+  border-radius: 16px;
+  height: 30px;
+  color: rgba(210, 105, 30, 0.575);
+  cursor: pointer;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.buttons> button:hover{
+  background-color: rgba(210, 105, 30, 0.42);
+  color: blanchedalmond;
+  text-decoration-line: underline;
+  transition: 0.3s;
+}
+.buttons > button:focus{
+  background-color: rgba(210, 105, 30, 0.42);
+  color: blanchedalmond;
+  text-decoration-line: underline;
+  transition: 0.2s;
 }
